@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manis Bakery — Toko Kue Artisan</title>
+    <meta name="description" content="Manis Bakery, toko kue artisan dengan bahan segar dan racikan resep keluarga. Pesan kue ulang tahun, kue kering, dan dessert lezat.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <header id="navbar" class="navbar">
+        <div class="container nav-inner">
+            <a href="#home" class="brand">
+                <span class="brand-mark">🧁</span>
+                <span class="brand-text">Manis<span class="brand-dot">.</span>Bakery</span>
+            </a>
+            <nav class="nav-links" id="navLinks">
+                <a href="#beranda">Beranda</a>
+                <a href="#menu">Menu</a>
+                <a href="#tentang">Tentang</a>
+                <a href="#keunggulan">Keunggulan</a>
+                <a href="#kontak">Kontak</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="#menu" class="btn btn-primary btn-sm">Pesan Sekarang</a>
+                <button class="nav-toggle" id="navToggle" aria-label="Buka menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section id="beranda" class="hero">
+        <div class="container hero-grid">
+            <div class="hero-copy">
+                <span class="eyebrow">Dipanggang segar setiap pagi</span>
+                <h1 class="hero-title">Kue manis untuk <span class="text-accent">momen tak terlupakan</span></h1>
+                <p class="hero-sub">Manis Bakery menghadirkan kue artisan racikan keluarga—lembut, harum, dan dibuat dengan bahan terbaik. Sempurna untuk perayaan, hadiah, atau camilan sore hari Anda.</p>
+                <div class="hero-cta">
+                    <a href="#menu" class="btn btn-primary">Lihat Menu</a>
+                    <a href="#tentang" class="btn btn-ghost">Cerita Kami</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <strong>12+</strong>
+                        <span>Tahun pengalaman</span>
+                    </div>
+                    <div class="stat">
+                        <strong>50+</strong>
+                        <span>Varian kue</span>
+                    </div>
+                    <div class="stat">
+                        <strong>4.9★</strong>
+                        <span>Rating pelanggan</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-img-card">
+                    <img src="images/hero-cake.jpg" alt="Kue tumpuk berhiwa warna" loading="lazy" onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Birthday_Cake_Bloomsburg%2C_Pennsylvania.jpg/960px-Birthday_Cake_Bloomsburg%2C_Pennsylvania.jpg'">
+                </div>
+                <div class="hero-badge">
+                    <span class="badge-emoji">🍰</span>
+                    <div>
+                        <strong>Fresh Daily</strong>
+                        <small>Dibuat setiap hari</small>
+                    </div>
+                </div>
+                <div class="hero-badge hero-badge-2">
+                    <span class="badge-emoji">🚚</span>
+                    <div>
+                        <strong>Pesan Antar</strong>
+                        <small>Se area kota</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave" aria-hidden="true">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L0,120Z"></path></svg>
+        </div>
+    </section>
+
+    <!-- MENU -->
+    <section id="menu" class="section">
+        <div class="container">
+            <div class="section-head">
+                <span class="eyebrow">Menu favorit</span>
+                <h2 class="section-title">Pilihan kue terbaik kami</h2>
+                <p class="section-sub">Setiap gigitan dibuat dengan cinta. Berikut beberapa menu yang paling dicari pelanggan kami.</p>
+            </div>
+            <div class="menu-grid">
+                <article class="menu-card">
+                    <div class="menu-img">
+                        <img src="https://images.unsplash.com/photo-1535141192574-5d4897c12636?auto=format&fit=crop&w=600&q=80" alt="Birthday Cake" loading="lazy">
+                        <span class="menu-tag">Best Seller</span>
+                    </div>
+                    <div class="menu-body">
+                        <h3>Cokelat Velvet</h3>
+                        <p>Kue cokelat lembut berlapiskan buttercream ganache Belgia.</p>
+                        <div class="menu-foot">
+                            <span class="price">Rp 185.000</span>
+                            <button class="btn btn-outline btn-sm" data-product="Cokelat Velvet">Pesan</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="menu-card">
+                    <div class="menu-img">
+                        <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=600&q=80" alt="Strawberry Cake" loading="lazy">
+                        <span class="menu-tag tag-new">Baru</span>
+                    </div>
+                    <div class="menu-body">
+                        <h3>Strawberry Dream</h3>
+                        <p>Sponge vanila dengan selai strawberry segar dan krim keju.</p>
+                        <div class="menu-foot">
+                            <span class="price">Rp 165.000</span>
+                            <button class="btn btn-outline btn-sm" data-product="Strawberry Dream">Pesan</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="menu-card">
+                    <div class="menu-img">
+                        <img src="images/menu-macarons.jpg" alt="Macarons" loading="lazy" onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Box_of_Macarons.jpg/960px-Box_of_Macarons.jpg'">
+                    </div>
+                    <div class="menu-body">
+                        <h3>French Macarons</h3>
+                        <p>Macaron renyah di luar, lembut di dalam. Isi 6 rasa premium.</p>
+                        <div class="menu-foot">
+                            <span class="price">Rp 120.000</span>
+                            <button class="btn btn-outline btn-sm" data-product="French Macarons">Pesan</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="menu-card">
+                    <div class="menu-img">
+                        <img src="images/menu-cupcakes.jpg" alt="Cupcakes" loading="lazy" onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Pink_Cupcakes.jpg/960px-Pink_Cupcakes.jpg'">
+                        <span class="menu-tag">Populer</span>
+                    </div>
+                    <div class="menu-body">
+                        <h3>Mini Cupcakes</h3>
+                        <p>Set cupcake mini dengan beragam topping manis, isi 12 pcs.</p>
+                        <div class="menu-foot">
+                            <span class="price">Rp 95.000</span>
+                            <button class="btn btn-outline btn-sm" data-product="Mini Cupcakes">Pesan</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="menu-card">
+                    <div class="menu-img">
+                        <img src="https://images.unsplash.com/photo-1464195244916-405fa0a82545?auto=format&fit=crop&w=600&q=80" alt="Croissant" loading="lazy">
+                    </div>
+                    <div class="menu-body">
+                        <h3>Butter Croissant</h3>
+                        <p>Croissant berlapis butter Prancis, renyah dan harum.</p>
+                        <div class="menu-foot">
+                            <span class="price">Rp 35.000</span>
+                            <button class="btn btn-outline btn-sm" data-product="Butter Croissant">Pesan</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="menu-card">
+                    <div class="menu-img">
+                        <img src="images/menu-cheesecake.jpg" alt="Cheesecake" loading="lazy" onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/New_York-style_cheesecake_1_2019-10-13.jpg/960px-New_York-style_cheesecake_1_2019-10-13.jpg'">
+                        <span class="menu-tag tag-new">Baru</span>
+                    </div>
+                    <div class="menu-body">
+                        <h3>New York Cheesecake</h3>
+                        <p>Cheesecake creamy dengan crust biskuit dan saus berry.</p>
+                        <div class="menu-foot">
+                            <span class="price">Rp 145.000</span>
+                            <button class="btn btn-outline btn-sm" data-product="New York Cheesecake">Pesan</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- TENTANG -->
+    <section id="tentang" class="section section-alt">
+        <div class="container about-grid">
+            <div class="about-visual">
+                <img src="images/about-baker.jpg" alt="Proses membuat kue di dapur bakery" loading="lazy" onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/e/ef/Konditor.jpg'">
+                <div class="about-exp">
+                    <strong>12+</strong>
+                    <span>tahun meracik kebahagiaan</span>
+                </div>
+            </div>
+            <div class="about-copy">
+                <span class="eyebrow">Tentang kami</span>
+                <h2 class="section-title">Cerita di balik setiap gigitan</h2>
+                <p>Manis Bakery dimulai dari dapur rumah sederhana pada tahun 2012. Apa awalnya hobi keluarga, kini menjadi toko kue kepercayaan ribuan pelanggan. Kami percaya kue terbaik lahir dari bahan terbaik dan tangan yang penuh perhatian.</p>
+                <ul class="about-list">
+                    <li><span>✓</span> Bahan lokal pilihan & cokelat premium</li>
+                    <li><span>✓</span> Dipanggang segar, tanpa pengawet</li>
+                    <li><span>✓</span> Racikan resep keluarga turun-temurun</li>
+                    <li><span>✓</span> Bisa kustomisasi sesuai keinginan</li>
+                </ul>
+                <a href="#menu" class="btn btn-primary">Coba menu kami</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- KEUNGGULAN -->
+    <section id="keunggulan" class="section">
+        <div class="container">
+            <div class="section-head">
+                <span class="eyebrow">Kenapa memilih kami</span>
+                <h2 class="section-title">Lebih dari sekadar toko kue</h2>
+            </div>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🌿</div>
+                    <h3>Bahan Segar</h3>
+                    <p>Kami memilih bahan-bahan terbaik setiap pagi demi rasa yang konsisten.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎂</div>
+                    <h3>Racikan Artisan</h3>
+                    <p>Setiap kue dibuat oleh tangan artisan berpengalaman, bukan massal.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚚</div>
+                    <h3>Pesan Antar</h3>
+                    <p>Layanan antar cepat se-kota agar kue Anda tiba dalam kondisi sempurna.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💬</div>
+                    <h3>Konsultasi Kue</h3>
+                    <p>Bingung pilih kue? Tanya asisten AI kami yang siap membantu 24/7.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KONTAK / FOOTER -->
+    <footer id="kontak" class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#beranda" class="brand">
+                    <span class="brand-mark">🧁</span>
+                    <span class="brand-text">Manis<span class="brand-dot">.</span>Bakery</span>
+                </a>
+                <p>Membuat momen Anda lebih manis sejak 2012.</p>
+                <div class="socials">
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                    <a href="#" aria-label="TikTok">TikTok</a>
+                    <a href="https://wa.me/6282175313311" target="_blank" rel="noopener" aria-label="WhatsApp">WhatsApp</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Jam Buka</h4>
+                <p>Senin – Jumat: 08.00 – 21.00</p>
+                <p>Sabtu – Minggu: 09.00 – 22.00</p>
+            </div>
+            <div class="footer-col">
+                <h4>Lokasi</h4>
+                <p>Jl. Manis No. 12, Kota Harmoni</p>
+                <p>+62 821 7531 3311</p>
+            </div>
+            <div class="footer-col">
+                <h4>Hubungi</h4>
+                <p>hello@manisbakery.id</p>
+                <a href="https://wa.me/6282175313311" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Chat WhatsApp</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Manis Bakery. Dibuat dengan <span class="text-accent">♥</span> dan sedikit gula.</p>
+        </div>
+    </footer>
+
+    <!-- INFO WHATSAPP (kiri bawah) -->
+    <a class="wa-info" href="https://wa.me/6282175313311" target="_blank" rel="noopener" aria-label="Hubungi kami via WhatsApp +62 821 7531 3311">
+        <span class="wa-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M19.05 4.94A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.86 9.86 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.91-7.02zM12.05 20.2c-1.53 0-3.04-.41-4.35-1.19l-.31-.18-3.12.82.83-3.04-.2-.31a8.21 8.21 0 0 1-1.26-4.39c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.42 5.82c0 4.54-3.7 8.23-8.25 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.16.25-.64.81-.79.97-.14.16-.29.18-.54.06-.25-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.43-1.34-1.68-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.16 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.16 1.74 2.66 4.21 3.73.59.25 1.05.4 1.41.51.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28z"/></svg>
+        </span>
+        <span class="wa-info-text">
+            <small>Pesan via WhatsApp</small>
+            <strong>+62 821 7531 3311</strong>
+        </span>
+    </a>
+
+    <!-- CHAT ASSISTANT (Langflow) -->
+    <button class="chat-fab" id="chatFab" aria-label="Buka asisten kue">
+        <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+        </svg>
+        <span class="chat-fab-dot"></span>
+    </button>
+
+    <div class="chat-panel" id="chatPanel" aria-hidden="true">
+        <div class="chat-header">
+            <div class="chat-header-info">
+                <div class="chat-avatar">🧁</div>
+                <div>
+                    <strong>Asisten Manis</strong>
+                    <small class="chat-status"><span class="status-dot"></span> Online</small>
+                </div>
+            </div>
+            <button class="chat-close" id="chatClose" aria-label="Tutup chat">×</button>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <div class="msg msg-bot">
+                <div class="msg-avatar">🧁</div>
+                <div class="msg-bubble">Halo! Saya Asisten Manis 🍰 Saya bisa bantu kamu memilih kue, cek harga, atau menjawab pertanyaan tentang menu Manis Bakery. Mau pesan apa hari ini?</div>
+            </div>
+        </div>
+        <div class="chat-quick" id="chatQuick">
+            <button class="quick-chip">Rekomendasi kue ultah</button>
+            <button class="quick-chip">Kue untuk diet</button>
+            <button class="quick-chip">Berapa harga macarons?</button>
+        </div>
+        <form class="chat-input" id="chatForm">
+            <input type="text" id="chatInput" placeholder="Tulis pesan untuk asisten..." autocomplete="off" />
+            <button type="submit" class="chat-send" aria-label="Kirim">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+            </button>
+        </form>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
